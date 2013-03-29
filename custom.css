@@ -1,0 +1,80 @@
+
+#container {
+  text-align: center;
+  padding: 1.25em 0 0.25em 0;
+  position: relative;
+}
+
+#top_nav {
+  position: absolute;
+  top: 0; right: 0;
+  width: 100%;
+}
+
+
+#top_nav ul {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+#top_nav li {
+  display: inline;
+  padding-left: 1em;
+  margin-left: 1em;
+  
+}
+
+
+
+section {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+h1 {
+  font: 16px Tahoma, sans-serif;
+  color: blue;
+}
+
+article {
+  border-style: solid;
+  padding: 5px 5px 5px 5px;
+  overflow: hidden; /* Contain child elements that have been floated. */
+}
+
+img {
+  border-radius: 5px;
+}
+
+article img {
+  padding: 0 5px 0 0;
+}
+
+article p {
+  font: 14px Tahoma, sans-serif;
+  width: 800px;
+}
+
+a:hover {
+  color: black;
+}
+
+#title {
+  font: 24px Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#banner {
+  width: 800px;
+  margin: 0 auto;
+  
+}
+
+.post {
+  float: left;
+}
+
+
+

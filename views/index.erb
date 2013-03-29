@@ -1,0 +1,33 @@
+
+<section>
+  <article>
+    <header>
+      <h1>Submit a Blog Entry:</h1>
+    </header>
+    <div class='post'>
+      <form action='/new_post' method='post'>
+        <p>Title:<input type='text' name='title'</p>
+        <textarea name='body' placeholder='Type your entry...' rows = '8' cols = '30'></textarea>
+        <input type='submit'>
+      </form>
+    </div>
+  </article>
+</section>
+
+
+<section>
+  <% @blog_posts.each do |blog_post| %>
+  <article>
+    <header>
+      <h1><span><a href="/posts/<%= blog_post.id %>"><%= blog_post.title %></a></span></h1>
+    </header>
+    <div class='post'>
+      <p><%= blog_post.body.gsub(/\n/, '<br />') %></p>
+    </div>
+  </article>
+  <% end %>
+</section>
+
+
+
+

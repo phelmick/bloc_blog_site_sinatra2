@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bloc Head's Blog</title>
+  	<link rel="stylesheet" type="text/css" href="/custom.css" />
+
+  </head>
+
+  <header>
+  <div class='container'>
+    <nav id='top_nav'>
+      <ul>
+        <li><a href='#'>Login</a></li> 
+        <li><a href='#'>Register</a></li> 
+        <li><a href='#'>Subscribe</a></li> 
+        <li><a href='#'>Admin</a></li>
+      </ul>
+    </nav>
+    <h1 id='main_title'>Ramblings of a Bloc Head</h1>
+
+    <div id='banner'>
+      <img src='http://placehold.it/800x100'>
+
+    </div>
+  </div>
+  </header>
+  
+  <body>
+    <%= yield %>
+  
+    <footer>
+      <hr>
+      <p>
+        <a href="/">Index</a>
+      </p>
+      <p>
+        <small>A <a href="http://bloc.io">Bloc Production</a></small>
+      </p>
+    </footer>
+  </body>
+</html>
